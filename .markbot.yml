@@ -1,0 +1,77 @@
+repo: 'confectionery-website-prototype'
+canvasCourse: 'web-dev-1'
+
+naming: true
+liveWebsite: true
+
+git:
+  numCommits: 10
+  allCommitted: true
+  allSynced: true
+
+html:
+  - path: 'index.html'
+    valid: true
+    bestPractices: true
+    outline: true
+    has:
+      - ['link[href*="fonts.googleapis.com"]', 'A webfont from Google Fonts should be used']
+      - 'header'
+      - 'header h1'
+      - 'header nav'
+      - 'header nav li'
+      - 'header nav li a'
+      - 'main'
+      - 'section'
+      - 'footer'
+      - 'img'
+      - 'h2'
+      - 'div'
+
+css:
+  - path: 'css/main.css'
+    valid: true
+    bestPractices: true
+    has:
+      - ['html', 'box-sizing', 'border-box']
+      - ['html', 'text-size-adjust', '100%']
+      - ['html', '-moz-text-size-adjust', '100%']
+      - ['html', '-ms-text-size-adjust', '100%']
+      - ['html', '-webkit-text-size-adjust', '100%']
+      - ['*', 'box-sizing', 'inherit']
+      - ['@25em']
+      - ['@38em', 'html', 'font-size', '110%']
+      - ['@38em', 'html', 'line-height', '1.4']
+      - ['@60em', 'html', 'font-size', '120%']
+      - ['@60em', 'html', 'line-height', '1.5']
+      - ['@90em', 'html', 'font-size', '130%']
+    search:
+      - '@-moz-viewport'
+      - '@-ms-viewport'
+      - '@-o-viewport'
+      - '@-webkit-viewport'
+      - '@viewport'
+      - 'padding'
+      - 'margin'
+      - 'position: relative'
+      - 'position: absolute'
+      - 'float: (left|right)'
+      - 'display: block'
+      - 'display: inline-block'
+    search_not:
+      - ['@media.+\(.*max-width', 'Media queries with `max-width` should not be used — use `min-width` instead']
+      - ['@media.+\(.*px', 'Pixel units should not be used in media queries — use `em` instead']
+      - ['font-size\s*:\s*.+px', 'Pixel units should not be used for `font-size` — use `rem` instead']
+      - ['line-height\s*:\s*.+(px|rem|em)', 'Line heights should not have units']
+
+functionality:
+  - path: 'index.html'
+    tests:
+      - |
+        let headerLink = $('header nav a');
+        let oldBg = css(headerLink).backgroundColor;
+
+        hover('header nav a', function () {
+          if (css(headerLink).backgroundColor == oldBg) fail('The background colour of the navigation links doesn’t change when hovered')
+          pass();
+        });
