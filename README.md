@@ -11,7 +11,7 @@ download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-1/confectione
 
 - *Fork this repository.*
 - Create an interative wireframe/prototype for a confectionery website.
-  <br>The name of the company must be either:
+  The name of the company must be either:
   - **Beau’s Bonbons**
   - **Coco’s Chocolatiers**
 - *It should have real text content*—**that you have to write yourself.**
