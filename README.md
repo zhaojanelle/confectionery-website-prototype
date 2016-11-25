@@ -2,7 +2,7 @@
 summary: 'Create a wireframe/prototype for a confectionery website—showing what you learned this term.'
 time: '10 hours'
 deliverables: '1 HTML file, 1 CSS file, images'
-download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-1/confectionery-website-download.zip'
+download: 'https://assets.learn-the-web.algonquindesign.ca/web-dev-1/confectionery-website-prototype-download.zip'
 ---
 
 # Confectionery website prototype
@@ -41,7 +41,7 @@ There should be a significant example of everything we’ve learned this term in
 - Standard media query widths: `25em`, `38em`, `60em`, `90em`
 - Standard text sizes & line heights: `100%/1.3`, `110%/1.4`, `120%/1.5`, `130%/1.5`
 - `margin`, `padding`, `position: absolute`, `position: relative`, `float: left` or `float: right`, `display: block`, `display: inline-block`
-- A background-color hover state for the navigation links
+- A `background-color` or `color` hover state for the navigation links
 
 ---
 
