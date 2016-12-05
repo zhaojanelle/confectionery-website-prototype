@@ -11,6 +11,7 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   background-color: #77635e;
+  font: normal 100%/1.3 "Open Sans", sans-serif;
 }
 
 *, *::before, *::after {
@@ -32,4 +33,20 @@ h1 {
 
 img {
   width: 100%;
+}
+
+.btn-div {
+  text-align: center;
+  display: block;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  padding: .75em;
+  border: 2px solid #333;
+  border-radius: 9px;
+  color: #fff;
+  background-color: #333;
+  font-size: 1.125rem;
 }
