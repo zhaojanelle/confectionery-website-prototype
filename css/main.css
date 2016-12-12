@@ -34,6 +34,8 @@ h1 {
   font-family: "Pacifico";
   color: #c02a1b;
   font-size: 2rem;
+  margin: 0;
+  padding: .5rem 0;
 }
 
 h2 {
@@ -97,7 +99,7 @@ section {
   display: inline-block;
   position: absolute;
   right: 1rem;
-  bottom: .1rem;
+  bottom: .7rem;
 }
 
 .nav-check:checked ~ .nav-label {
@@ -164,8 +166,12 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.products:hover{
+.products:hover {
   opacity: .5;
+}
+
+.productcards {
+  text-decoration: none;
 }
 
 .btn-div {
@@ -256,6 +262,17 @@ footer {
     width: 40%;
   }
 
+  .section-heading {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .person {
+    display: inline-block;
+    width: 40%;
+    margin: .5rem;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -263,12 +280,6 @@ footer {
   html {
     font-size: 110%;
     line-height: 1.4;
-  }
-
-  .person {
-    display: inline-block;
-    width: 40%;
-    margin: .5rem;
   }
 
 }
@@ -295,19 +306,81 @@ footer {
   .section-heading {
     text-align: left;
     float: left;
-    width: 30%;
+    width: 35%;
   }
 
   .section-nav {
     float: right;
-    width: 70%;
+    width: 65%;
   }
 
   .nav li {
     display: inline-block;
   }
 
+  .truffles,
+  .shavings,
+  .biscuits {
+    width: 33%;
+    margin: .5rem;
+    float: left;
+  }
 
+  .product-desc {
+    font-size: 1rem;
+    position: static;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+  }
+
+  .products {
+    border: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .product {
+    position: static;
+    display: inline-block;
+    margin: 0;
+    border: 2px solid #b6cac0;
+    border-radius: 1rem;
+    background-color: #b6cac0;
+  }
+
+  .section-products-images {
+    padding-bottom: 1rem;
+    overflow: hidden;
+    float: left;
+  }
+
+  .section-products {
+    overflow: hidden;
+  }
+
+  .btn-div {
+    display: inline-block;
+  }
+
+  .section-contact div {
+    display: inline-block;
+    width: 45%;
+  }
+
+  .map iframe {
+    width: 100%;
+    min-height: 200px;
+  }
+
+  .section-about div {
+    display: inline-block;
+    width: 45%;
+  }
+
+  .customer {
+    width: 25%;
+  }
 
 }
 
