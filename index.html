@@ -7,89 +7,124 @@
     <link href="css/main.css" rel="stylesheet">
     <meta name="handheldfriendly" content="true">
     <meta name="mobileoptimized" content="240">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Pacifico" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Coustard|Pacifico|Open+Sans:400,600" rel="stylesheet">
   </head>
   <body>
   <header>
-    <h1>Coco Chocolatiers</h1>
-    <nav>
-      <ul class="navigation">
-        <li><a href="#">Products</a></li>
-        <li><a href="#">Contact us</a></li>
-        <li><a href="#">About us</a></li>
-        <li><a href="#">Testimonial</a></li>
-      </ul>
-    </nav>
+    <div class="section-heading">
+      <h1>Coco Chocolatiers</h1>
+    </div>
+    <div class="section-nav">
+      <nav class="navigation">
+        <input type="checkbox" class="nav-check" id="nav-check">
+        <label class="nav-label" for="nav-check">
+          <img class="nav-open" src="images/nav-icon.svg" alt="Open Navigation">
+          <img class="nav-close" src="images/nav-icon-close.svg" alt="Close Navigation">
+        </label>
+        <ul class="nav">
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Testimonial</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <section>
-    <img src="images/placeholder-3by2.svg" alt="">
+  <section class="section-products">
     <h2>Products</h2>
-    <div class="section-products">
-      <figure>
-        <img src="images/placeholder-1by1.svg" alt="">
-        <figcaption>Coco Poofs</figcaption>
-      </figure>
-      <figure>
-        <img src="images/placeholder-1by1.svg" alt="">
-        <figcaption>Coco Cake</figcaption>
-      </figure>
-      <figure>
-        <img src="images/placeholder-1by1.svg" alt="">
-        <figcaption>Mocho Coco</figcaption>
-      </figure>
+    <div class="section-products-images">
+      <a class="productcards" href="#">
+        <figure class="product biscuits">
+          <img class="products" src="images/biscuits.jpg" alt="Coco Biscuits">
+          <figcaption class="product-desc">Coco Biscuits</figcaption>
+        </figure>
+      </a>
+      <a class="productcards" href="#">
+        <figure class="product truffles">
+          <img class="products" src="images/truffles.jpg" alt="Coco Truffles">
+          <figcaption class="product-desc">Coco Truffles</figcaption>
+        </figure>
+      </a>
+      <a class="productcards" href="#">
+        <figure class="product shavings">
+          <img class="products" src="images/shavings.jpg" alt="Coco Shavings">
+          <figcaption class="product-desc">Mocho Shavings</figcaption>
+        </figure>
+      </a>
     </div>
     <div class="btn-div">
       <a class="button" href="#">More Products »</a>
     </div>
   </section>
 
-  <section>
+  <section class="section-contact">
     <h2>Contact us</h2>
-    <figure>
-      <img src="images/placeholder-1by1.svg" alt="">
-      <figcaption>
-        Address:
-      </figcaption>
-    </figure>
-    <ol>
-      <li>Phone:1-800-765-5675</li>
-      <li>Email:hello@cocochocolatier.com</li>
-      <li>Hours: Mon-Fri <i>8-6</i> Sat <i>10-5</i> Sun <i>closed</i></li>
-    </ol>
+    <div class="location">
+      <h3>Location:</h3>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3003.800580598419!2d168!3d84.6!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0000000000001224%3A0x0000000000001225!2sNorth+Pole!5e0!3m2!1sen!2sca!4v1481504755376" width="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+      <p>123 North Pole Ave, North Pole, Alaska 99705</p>
+    </div>
+    <div class="hours">
+      <h3>Hours of Operation:</h3>
+      <ol class="hourslist">
+        <li>Monday: 8am - 6pm</li>
+        <li>Tuesday: 8am - 6pm</li>
+        <li>Wednesday: 8am - 6pm</li>
+        <li>Thursday: 8am - 6pm</li>
+        <li>Friday: 8am - 8pm</li>
+        <li>Saturday: 10am - 5pm</li>
+        <li>Sunday: closed</li>
+      </ol>
+    </div>
+    <div class="phone">
+
+      <div class="contacticon">
+        <img class="icons" src="images/phone-icon.svg" alt="">
+      </div>
+      <div class="contactinfo">
+        <p>1-800-443-5654</p>
+      </div>
+    </div>
+    <div class="email">
+
+      <div class="contacticon">
+        <img class="icons" src="images/email-icon.svg" alt="">
+      </div>
+      <div class="contactinfo">
+        <p>hello@cocochoco.com</p>
+      </div>
+    </div>
   </section>
 
-  <section>
+  <section class="about">
     <h2>About Us</h2>
     <div class="founders">
-      <figure>
+      <figure class="person">
         <img src="images/person-circle.svg" alt="">
-        <figcaption>John Smith, Co-Founder, Father, Keeper of Family secret</figcaption>
+        <figcaption>Santa Clause</figcaption>
       </figure>
-      <figure>
+      <figure class="person">
         <img src="images/person-circle.svg" alt="">
-        <figcaption>John Smith Jr., Co-Founder, Son</figcaption>
+        <figcaption>Mrs. Clause</figcaption>
       </figure>
     </div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    <p>Mr and Mrs. Clause has been baking chocolate recipes for over 200 years. While the elfs have taken over the baking these days, the Clauses are very much still involved in quality control and safely guarding their family recipe. </p>
   </section>
 
-  <section>
-    <h2>Testimonials</h2>
-    <div class="socialmedia">
-      <figure>
-        <img src="images/placeholder-1by1.svg" alt="">
-        <figcaption>@KristyKream</figcaption>
-      </figure>
-      <figure>
-        <img src="images/placeholder-1by1.svg" alt="">
-        <figcaption>@blahblah</figcaption>
-      </figure>
-      <figure>
-        <img src="images/placeholder-1by1.svg" alt="">
-        <figcaption>@cocomania</figcaption>
-      </figure>
+  <section class="section-testimonial">
+    <h2>Show us your pictures</h2>
+    <div class="customerpics">
+      <img class="customer" src="images/placeholder-1by1.svg" alt="">
+      <img class="customer" src="images/placeholder-1by1.svg" alt="">
+      <img class="customer" src="images/placeholder-1by1.svg" alt="">
+      <img class="customer" src="images/placeholder-1by1.svg" alt="">
     </div>
   </section>
 
   </body>
+  <footer>
+    <p>	&copy; 2016 Coco Chocolatier</p>
+  </footer>
 </html>
