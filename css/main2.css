@@ -158,10 +158,6 @@ img {
   padding-bottom: 2rem;
 }
 
-.section-products-main {
-  position: relative;
-}
-
 .section-products-text {
   margin: 1rem;
 }
@@ -178,9 +174,10 @@ img {
   text-decoration: none;
   font-weight: 600;
   position: absolute;
-  left: 50%;
+  left: 0;
+  right: 0;
   bottom: 1rem;
-  transform: translateX(-50%);
+  text-align: center;
 }
 
 .product:hover {
@@ -296,42 +293,63 @@ footer {
   background-color: #b6cac0;
 }
 
-@media only screen and (min-width: 30em) {
-
-  .product {
-    display: inline-block;
-    margin: .5rem auto;
-  }
-
-  .section-products-images {
-    overflow: hidden;
-    text-align: center;
-  }
-
-  .truffles,
-  .shavings {
-    width: 50%;
-    float: left;
-  }
-
-  .section-heading {
-    text-align: left;
-    padding-left: 1rem;
-  }
-
-  .person {
-    display: inline-block;
-    width: 40%;
-    margin: .5rem;
-  }
-
-}
-
 @media only screen and (min-width: 38em) {
 
   html {
     font-size: 110%;
     line-height: 1.4;
+  }
+
+  .section-products-images {
+    overflow: hidden;
+  }
+
+  .productcards {
+    float: left;
+    width: 50%;
+  }
+
+  .section-contact {
+    overflow: hidden;
+  }
+
+  .section-contact div {
+    display: inline-block;
+  }
+
+  .map, .map iframe {
+    width: 100%;
+    display: block;
+  }
+
+  .hours {
+    float: left;
+    width: 50%;
+  }
+
+  .phone, .email {
+    width: 50%;
+  }
+
+  .section-about {
+    overflow: hidden;
+  }
+
+  .founders {
+    display: inline-block;
+    float: left;
+    width: 50%;
+  }
+
+  .founders figure {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .aboutdesc {
+    display: inline-block;
+    width: 50%;
   }
 
 }
@@ -370,28 +388,6 @@ footer {
     display: inline-block;
   }
 
-  .truffles,
-  .shavings,
-  .biscuits {
-    width: 33%;
-    margin: .5rem;
-    float: left;
-  }
-
-  .product-desc {
-    font-size: 1rem;
-    position: static;
-    left: 0;
-    top: 0;
-    transform: translate(0, 0);
-  }
-
-  .products {
-    border: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-left-radius: 0;
-  }
-
   .product {
     position: static;
     display: inline-block;
@@ -420,10 +416,6 @@ footer {
     width: 45%;
   }
 
-  .map iframe {
-    width: 100%;
-    min-height: 200px;
-  }
 
   .section-about div {
     display: inline-block;
