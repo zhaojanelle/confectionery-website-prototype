@@ -45,7 +45,6 @@ h1 {
 
 h2 {
   color: #c02a1b;
-  font-family: "PT Sans";
   font-size: 1.5rem;
   margin: 0;
   font-weight: 400;
@@ -217,7 +216,7 @@ img {
 
 .section-contact {
   background-color: #b5bab7;
-  margin: 1rem;
+  padding: 1rem;
 }
 
 .contactlist {
@@ -248,8 +247,36 @@ ol {
   padding-left: 1rem;
 }
 
-.about {
-  background-color: #b5bab7;
+/*CODE FOR ABOUT SECTION*/
+
+.section-about {
+  background-color: #b6cac0;
+  padding: 1rem;
+}
+
+.quote {
+  text-align: center;
+  border-bottom: 1px dotted #c02a1b;
+  padding-bottom: 2rem;
+}
+
+.section-about blockquote {
+  font-size: 1.8rem;
+  font-family: "PT Sans Narrow";
+}
+
+.founders {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.founders figure {
+  display: inline-block;
+  width: 45%;
+}
+
+.about-desc {
+
 }
 
 .customer {
@@ -259,7 +286,7 @@ ol {
 
 .section-testimonial {
   overflow: hidden;
-  background-color: #b6cac0;
+  background-color: #b5bab7;
 }
 
 .customerpics {
