@@ -53,7 +53,7 @@ h2 {
 
 h3 {
   font-weight: 400;
-  margin: 0;
+  margin-left: 0;
 }
 
 a {
@@ -62,7 +62,7 @@ a {
 
 section {
   padding: 0;
-  text-align: center;
+  text-align: left;
 }
 
 figure {
@@ -156,6 +156,7 @@ img {
 .section-products {
   background-color: #b6cac0;
   text-align: left;
+  padding-bottom: 2rem;
 }
 
 .section-products-main {
@@ -175,7 +176,7 @@ img {
 .product-desc {
   color: #b6cac0;
   font-size: 1.1rem;
-  text-decoration: underline;
+  text-decoration: none;
   font-weight: 600;
   position: absolute;
   left: 50%;
@@ -214,14 +215,25 @@ img {
 
 /*CODE FOR CONTACT SECTION*/
 
+.section-contact {
+  background-color: #b5bab7;
+  margin: 1rem;
+}
+
 .contactlist {
   list-style-type: none;
   text-align: left;
 }
 
+.map {
+  margin-top: 1rem;
+  text-align: center;
+}
+
 .map iframe {
-  width: 90%;
+  width: 100%;
   min-height: 300px;
+  max-width: 600px;
 }
 
 .hourslist {
@@ -229,25 +241,11 @@ img {
 }
 
 ol {
-  margin: 0;
   padding: 0;
 }
 
-.section-contact {
-  background-color: #b6cac0;
-}
-
-.contacticon {
-  display: inline-block;
-}
-
-.contactinfo {
-  display: inline-block;
-}
-
-.icons {
-  width: 25px;
-  padding-right: .5rem;
+.contact-content {
+  padding-left: 1rem;
 }
 
 .about {
