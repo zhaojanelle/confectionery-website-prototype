@@ -183,8 +183,8 @@ img {
   transform: translateX(-50%);
 }
 
-.products:hover {
-  opacity: .5;
+.product:hover {
+  opacity: .7;
 }
 
 .productcards {
@@ -199,16 +199,20 @@ img {
 .button {
   display: inline-block;
   text-decoration: none;
-  padding: .5rem 1rem;
-  border-radius: 9px;
-  color: #b6cac0;
-  background-color: #c02a1b;
+  text-transform: uppercase;
+  padding: .75rem 1.5rem;
+  border: 2px solid #c02a1b;
+  color: #c02a1b;
+  background-color: none;
   font-size: 1.125rem;
 }
 
 .button:hover {
-  opacity: .5;
+  color: #b6cac0;
+  background-color: #c02a1b;
 }
+
+/*CODE FOR CONTACT SECTION*/
 
 .contactlist {
   list-style-type: none;
