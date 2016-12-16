@@ -30,6 +30,11 @@ body {
   margin: 0;
 }
 
+.section-heading {
+  width: 80%;
+  text-align: center;
+}
+
 h1 {
   font-family: "Pacifico";
   color: #c02a1b;
@@ -51,19 +56,20 @@ h3 {
 }
 
 section {
-  padding: 1rem 0;
+  padding: 0;
   text-align: center;
 }
 
-.section-products {
-  background-color: #b5bab7;
-  text-align: center;
+figure {
+  margin: 0;
+  padding: 0;
 }
 
-.section-heading {
-  width: 80%;
-  text-align: center;
+img {
+  width: 100%;
 }
+
+/*NAVIGATION CODE*/
 
 .nav {
   list-style-type: none;
@@ -141,8 +147,22 @@ section {
   background-color: #b5bab7;
 }
 
-img {
-  width: 100%;
+/*CODE FOR PRODUCT SECTION*/
+
+.section-products {
+  background-color: #b6cac0;
+  text-align: center;
+}
+
+.section-products-main {
+  position: relative;
+}
+
+.shop-all-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .product {
