@@ -286,6 +286,7 @@ ol {
 
 footer {
   background-color: #b6cac0;
+  padding-left: 1rem;
 }
 
 @media only screen and (min-width: 25em) {
