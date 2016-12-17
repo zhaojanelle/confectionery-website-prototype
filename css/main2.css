@@ -370,6 +370,10 @@ footer {
     padding-right: 1rem;
   }
 
+  .nav li:hover {
+    background-color: #b6cac0;
+  }
+
   header {
     overflow: hidden;
   }
