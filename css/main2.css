@@ -396,6 +396,8 @@ footer {
     position: absolute;
     bottom: 2rem;
     text-align: center;
+    left: 0;
+    right: 0;
   }
 
   .map {
@@ -427,6 +429,18 @@ footer {
     font-size: 130%;
   }
 
+  .founders figure {
+    display: inline-block;
+    width: 40%;
+  }
 
+  body {
+    max-width: 90em;
+    margin: auto;
+  }
+
+  .section-products-text {
+    bottom: 7rem;
+  }
 
 }
