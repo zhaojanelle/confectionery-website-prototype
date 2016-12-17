@@ -32,7 +32,8 @@ body {
 
 .section-heading {
   width: 80%;
-  text-align: center;
+  text-align: left;
+  padding-left: 1rem;
 }
 
 h1 {
@@ -51,7 +52,7 @@ h2 {
 }
 
 h3 {
-  font-weight: 400;
+  font-weight: bold;
   margin-left: 0;
 }
 
@@ -229,7 +230,6 @@ img {
 .map iframe {
   width: 100%;
   min-height: 300px;
-  max-width: 600px;
 }
 
 .hourslist {
@@ -313,22 +313,20 @@ footer {
     overflow: hidden;
   }
 
-  .section-contact div {
-    display: inline-block;
-  }
-
   .map, .map iframe {
-    width: 100%;
     display: block;
+    min-height: 450px;
   }
 
   .hours {
     float: left;
     width: 50%;
+    display: inline-block;
   }
 
   .phone, .email {
     width: 50%;
+    display: inline-block;
   }
 
   .section-about {
@@ -337,19 +335,19 @@ footer {
 
   .founders {
     display: inline-block;
-    float: left;
-    width: 50%;
+    width: 48%;
+    vertical-align: middle;
   }
 
   .founders figure {
     display: block;
-    width: 50%;
     margin: 0 auto;
   }
 
   .aboutdesc {
     display: inline-block;
-    width: 50%;
+    width: 48%;
+    vertical-align: middle;
   }
 
 }
@@ -368,13 +366,15 @@ footer {
   .nav {
     display: inline-block;
     position: static;
+    text-align: right;
+    padding-right: 1rem;
   }
 
   header {
     overflow: hidden;
   }
+
   .section-heading {
-    text-align: left;
     float: left;
     width: 35%;
   }
@@ -388,38 +388,31 @@ footer {
     display: inline-block;
   }
 
-  .product {
-    position: static;
-    display: inline-block;
-    margin: 0;
-    border: 2px solid #b6cac0;
-    border-radius: 1rem;
-    background-color: #b6cac0;
+  .section-products-main {
+    position: relative;
   }
 
-  .section-products-images {
-    padding-bottom: 1rem;
-    overflow: hidden;
+  .section-products-text {
+    position: absolute;
+    bottom: 2rem;
+    text-align: center;
+  }
+
+  .map {
     float: left;
+    width: 50%;
+    padding-right: 1rem;
   }
 
-  .section-products {
-    overflow: hidden;
+  .map iframe {
+    min-height: 650px;
   }
 
-  .btn-div {
-    display: inline-block;
-  }
-
-  .section-contact div {
-    display: inline-block;
-    width: 45%;
-  }
-
-
-  .section-about div {
-    display: inline-block;
-    width: 45%;
+  .address, .hours, .email., .phone {
+    margin-left: 60%;
+    width: auto;
+    display: block;
+    float: none;
   }
 
   .customer {
@@ -433,5 +426,7 @@ footer {
   html {
     font-size: 130%;
   }
+
+
 
 }
